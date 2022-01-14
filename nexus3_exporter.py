@@ -73,6 +73,8 @@ def fetch_asset_listing(quiet, server_url, repo_name):
 
             try:
                 resp = requests.get(query_url, verify=False).json()
+                #If use Basic Auth, then ..
+                #resp = requests.get(query_url, auth=('user','pass')).json()
             except IOError as e:
                 pbar.close()
                 print(str(e))
