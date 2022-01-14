@@ -28,6 +28,10 @@ Optionally, you can supply:
 Example call:
 
     python3 nexus3_exporter.py https://repo.loadingbyte.com maven-releases
+    
+    python3 nexus3_exporter.py -n https://repo.loadingbyte.com maven-releases
+    change in script? if you use Basic Auth
+      resp = requests.get(query_url, auth=('user','pass')).json()
 
 # Importing
 
