@@ -4,6 +4,9 @@ A little script for downloading all assets inside a Nexus 3 repository, followin
 For example, fed with a Nexus 3 Maven repositories, this script yields a standard Maven repository structure containing all artifacts.
 
 ## Usage
+Before run
+
+pip3 install tqdm
 
 You need Python 3 to run this script. You also need to install the requirements listed in `requirements.txt` (e.g., using pip).
 
