@@ -10,6 +10,8 @@ pip3 install tqdm
 
 You need Python 3 to run this script. You also need to install the requirements listed in `requirements.txt` (e.g., using pip).
 
+`pip3 install -r requirements.txt`
+
 Launch the script with:
 
     python3 nexus3_exporter.py [-h] [-o output_dir] [-n] <server> <repo>
