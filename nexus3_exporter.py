@@ -112,7 +112,7 @@ def download_single_asset(quiet, file_path, no_verify, asset):
     for tryy in range(1, 11):
         try:
             r = requests.get(asset["downloadUrl"], verify=False)
-            with open(file_path, "wb") as f:
+            with open("file_path", "wb") as f:
                 f.write(r.content)
         except IOError as e:
             # The requests API tries multiple times internally, so if it can't connect, the connection is probably down.
